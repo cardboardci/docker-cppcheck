@@ -1,0 +1,10 @@
+---
+name: Docker cppCheck
+slug: docker-cppcheck
+project: cardboardci
+namespace: []
+description: Static analysis of C/C++ code.
+license:
+  name: MIT
+tags:
+  - docker
