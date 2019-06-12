@@ -1,0 +1,8 @@
+---
+name: github
+provider: github.com
+repository: docker-cppcheck
+url: https://github.com/cardboardci/docker-cppcheck
+clone:
+  ssh: git@github.com:cardboardci/docker-cppcheck.git
+  https: https://github.com/cardboardci/docker-cppcheck.git
