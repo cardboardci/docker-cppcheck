@@ -1,5 +1,12 @@
-FROM alpine:3.10.3
-COPY rootfs/ /
+FROM cardboardci/ci-core:disco
+USER root
+
+ARG VERSION=1.77
+
+COPY provision/install.sh /tmp/install.sh
+RUN bash /tmp/install.sh ; sync ; rm /tmp/install.sh
+
+USER cardboardci
 
 ##
 ## Image Metadata
