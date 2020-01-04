@@ -1,0 +1,5 @@
+build-essential=1
+libpcre3-dev=1
+curl=1
+python=1
+python-pygments=1
