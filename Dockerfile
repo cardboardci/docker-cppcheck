@@ -5,6 +5,12 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 ARG VERSION=1.77
 
+COPY provision/pkglist /cardboardci/pkglist
+RUN apt-get update \
+    && xargs -a /cardboardci/pkglist apt-get install --no-install-recommends -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY provision/install.sh /tmp/install.sh
 RUN bash /tmp/install.sh ; sync ; rm /tmp/install.sh
 
