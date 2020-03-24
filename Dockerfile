@@ -1,4 +1,4 @@
-FROM cardboardci/ci-core@sha256:0fe2a47cfb95c70190c04733a5c2ce67b91d182c2ca2623f56412af4dbbae58f
+FROM cardboardci/ci-core@sha256:b3e7917c28200c780e0e6a19057cb546fcafc4719640f6b8be459c390714f97c
 USER root
 
 ARG DEBIAN_FRONTEND=noninteractive
