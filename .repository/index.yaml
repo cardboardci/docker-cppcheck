@@ -1,0 +1,18 @@
+slug: docker-cppcheck
+description: Static analysis of C/C++ code.
+project: cardboardci
+namespace: docker
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2019
+topics: |-
+  [
+    "cplusplus",
+    "dockerfile",
+    "cppcheck",
+    "cross-platform",
+    "static-analysis"
+  ]
